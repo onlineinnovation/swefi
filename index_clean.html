@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="sv-SE">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SWEFI SPORT — Sport Management Company</title>
+  <link rel="icon" href="assets/images/IMG_6200.jpg" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/images/IMG_6200.jpg">
+
+  <!-- Tailwind CDN for quick development -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/tailwind-overrides.css">
+</head>
+<body class="antialiased text-slate-900">
+
+  <!-- NAV -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="container mx-auto flex items-center justify-between py-4">
+      <a href="#" class="flex items-center gap-3">
+        <img src="assets/images/cropped-IMG_6200.jpg" alt="SWEFI SPORT" class="h-12 w-auto object-contain">
+        <span class="sr-only">SWEFI SPORT</span>
+      </a>
+      <nav class="hidden md:block">
+        <ul class="flex gap-6 text-sm">
+          <li><a href="#about" class="hover:text-indigo-600 transition">Om oss</a></li>
+          <li><a href="#services" class="hover:text-indigo-600 transition">Tjänster</a></li>
+          <li><a href="#camps" class="hover:text-indigo-600 transition">Camper</a></li>
+          <li><a href="#contact" class="hover:text-indigo-600 transition">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button id="mobileToggle" class="md:hidden p-2 rounded focus:outline-none focus:ring">☰</button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+      <div class="container mx-auto py-3">
+        <a href="#about" class="block py-2">Om oss</a>
+        <a href="#services" class="block py-2">Tjänster</a>
+        <a href="#camps" class="block py-2">Camper</a>
+        <a href="#contact" class="block py-2">Kontakt</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="container mx-auto px-4 mt-8">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">SWEFI SPORT</h1>
+        <p class="text-lg text-slate-700 mb-4">En svensk agentur specialiserad inom ishockey — spelarrepresentation, rådgivning och utveckling.</p>
+        <p class="mb-6">Vi representerar spelare i hela landet och internationellt. Vår prioritet är relationer och individens utveckling.</p>
+      </div>
+      <div class="img-zoom">
+        <img src="assets/images/output-onlinepngtools-1024x308.png" alt="SWEFI SPORT banner" class="rounded-lg shadow-lg">
+      </div>
+    </section>
+
+    <!-- ABOUT / INTRO -->
+    <section id="about" class="mt-12">
+      <div class="callout">
+        <p class="font-semibold">SWEFI SPORT är en svensk agentur specialiserad inom ishockey, med fokus på spelarrepresentation och rådgivning.</p>
+        <p class="mt-2 text-sm text-slate-600">Målet är att maximera våra klienters potential och skapa förutsättningar för nya kliv i deras karriär.</p>
+      </div>
+    </section>
+
+    <!-- NHL DRAFT -->
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold">NHL DRAFT</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <img src="assets/images/IMG_2024.jpg" alt="Player" class="rounded shadow">
+        <img src="assets/images/9339ff6b-7176-442b-a996-259144a8008b-852x1024.jpg" alt="Player 2" class="rounded shadow">
+      </div>
+    </section>
+
+    <!-- DEVELOPMENT CAMPS -->
+    <section id="camps" class="mt-12">
+      <h2 class="text-2xl font-semibold">Development Camps</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div>
+          <img src="assets/images/asdasdasdasd-828x1024.jpg" alt="Camp image" class="rounded shadow mb-3">
+          <div class="font-medium">Melvin Strahl | Columbus Blue Jackets</div>
+        </div>
+        <div>
+          <img src="assets/images/IMG_2049.jpg" alt="Player Lucas" class="rounded shadow mb-3">
+          <div class="font-medium">Lucas Pettersson | Anaheim Ducks</div>
+        </div>
+      </div>
+
+      <!-- Camps gallery simplified -->
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-3 mt-6">
+        <img src="assets/images/LUCAS-768x768.png" alt="Lucas" class="rounded">
+        <img src="assets/images/5B4BD7CF-7DED-47CD-BFC9-A7846071517A-1-768x768.jpg" alt="Player" class="rounded">
+        <img src="assets/images/IMG_3535-768x768.jpg" alt="Player" class="rounded">
+        <img src="assets/images/IMG_3323-768x768.jpg" alt="Player" class="rounded">
+        <img src="assets/images/JONATHAN-768x768.png" alt="Jonathan" class="rounded">
+        <img src="assets/images/MELVIN-768x768.png" alt="Melvin" class="rounded">
+      </div>
+    </section>
+
+    <!-- SERVICES / HOW WE WORK -->
+    <section id="services" class="mt-12">
+      <h2 class="text-2xl font-semibold">Hur vi jobbar</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        <div class="callout">Spelarrepresentation & rådgivning</div>
+        <div class="callout">Marknadsföring & klubbsökande</div>
+        <div class="callout">Avtalsförhandling & kontraktsskrivning</div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-12 grid md:grid-cols-2 gap-8 items-start">
+      <div>
+        <img src="assets/images/IMG_6026-768x929.jpg" alt="Filip Hjorth" class="rounded shadow">
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">Kontakta oss</h3>
+        <p class="mt-2"><strong>Filip Hjorth</strong><br>SICO Certifierad Spelaragent<br>Telefon: +46-76 828 24 72<br><a href="mailto:filip.hjorth@swefisport.com">filip.hjorth@swefisport.com</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer mt-12">
+    <div class="container mx-auto text-sm text-slate-600 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>Alla rättigheter reserverade – SWEFI SPORT Sport Management Company 2020.</div>
+      <div>Utvecklat av Online Innovation Sverige</div>
+    </div>
+  </footer>
+
+  <!-- Minimal scripts: mobile toggle, lazy fade-in -->
+  <script>
+    document.getElementById('mobileToggle').addEventListener('click', function(){
+      const m = document.getElementById('mobileMenu');
+      m.classList.toggle('hidden');
+    });
+
+    // fade-up observer
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting) e.target.classList.add('in-view');
+      })
+    },{threshold:0.08});
+    document.querySelectorAll('h2, .callout, img').forEach(el=>{ el.classList.add('fade-up'); io.observe(el); });
+  </script>
+</body>
+</html>
